@@ -1,0 +1,19 @@
+import pandas as pd
+#Uploading data into dataframe
+df = pd.read_csv(&quot;D:\Jeyashri\IBM\Datasets\Social_Network_Ads.csv&quot;)
+df
+# Fill missing values with a specific value
+df = df.fillna(values)
+df
+# Drop rows with missing values
+df = df.dropna()
+df
+# Interpolate missing values
+df = df.interpolate()
+df
+# Remove duplicate rows
+df = df.drop_duplicates()
+df
+# One-hot encoding categorical columns
+df = pd.get_dummies(df, columns=[&#39;Gender&#39;])
+df
